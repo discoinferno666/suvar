@@ -5,10 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "optimize:images": "node tools/optimize-images.mjs",
+    "prebuild": "npm run optimize:images",
     "build": "node tools/build.mjs",
     "check": "node --check script.js && node --check effects.js && node tools/check-static.mjs",
     "preview": "vite preview --host 127.0.0.1"
   },
-  "dependencies": {"gsap": "3.13.0"},
-  "devDependencies": {"vite": "^7.1.0", "@babel/parser": "^7.28.0"}
+  "dependencies": {
+    "gsap": "3.13.0"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.28.0",
+    "sharp": "^0.35.5",
+    "vite": "^7.1.0"
+  }
 }

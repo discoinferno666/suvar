@@ -3,6 +3,7 @@ node_modules/
 .qa/
 .codex-artifacts/
 dist/
+assets/optimized/
 *.zip
 .env
 .env.*

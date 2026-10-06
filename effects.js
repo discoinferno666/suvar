@@ -79,7 +79,8 @@ window.createStoryEffects = function () {
     // Clone the exact image geometry inside its existing Figma masks. Only the
     // glass is exposed, so generated details never move the frame or foliage.
     for (const original of artboard.querySelectorAll('img')) {
-      const variant = variants[original.getAttribute('src')?.split('/').at(-1)];
+      // Production images retain their original filename with a .webp suffix.
+      const variant = variants[original.getAttribute('src')?.split('/').at(-1)?.replace(/\.webp$/i, '')];
       if (!variant) continue;
       const dim = original.cloneNode(false);
       dim.src = variant[1];
