@@ -1,0 +1,9 @@
+node_modules/
+.npm-cache/
+.qa/
+.codex-artifacts/
+dist/
+*.zip
+.env
+.env.*
+!.env.example

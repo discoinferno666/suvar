@@ -1,0 +1,14 @@
+{
+  "name": "suvar-folklore-case",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "node tools/build.mjs",
+    "check": "node --check script.js && node --check effects.js && node tools/check-static.mjs",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {"gsap": "3.13.0"},
+  "devDependencies": {"vite": "^7.1.0", "@babel/parser": "^7.28.0"}
+}

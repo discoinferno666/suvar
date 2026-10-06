@@ -1,0 +1,14 @@
+GSAP and ScrollTrigger 3.13.0
+Copyright (c) 2025 GreenSock / Webflow.
+License information: https://gsap.com/standard-license/
+The distributed library files retain their original license headers.
+
+Inter font
+Copyright The Inter Project Authors.
+SIL Open Font License 1.1: https://github.com/rsms/inter/blob/master/LICENSE.txt
+
+Lora font
+Copyright The Lora Project Authors.
+SIL Open Font License 1.1: https://github.com/cyrealtype/Lora-Cyrillic/blob/master/OFL.txt
+
+Design artwork: original assets supplied through the referenced Figma file.

@@ -1,0 +1,25 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/7ee89f98-6bae-42a8-b109-e716a46a35b7";
+const imgImage176 = `${assetPathPrefix}/435aa.png`;
+const imgImage173 = `${assetPathPrefix}/a12e7.svg`;
+const imgImage174 = `${assetPathPrefix}/b9a72.svg`;
+const imgImage175 = `${assetPathPrefix}/1f715.svg`;
+
+export default function Component6() {
+  return (
+    <div className="contents relative size-full" data-node-id="15:679" data-name="Фонарь 6">
+      <div className="-translate-x-1/2 absolute contents left-[calc(50%+377.52px)] top-[11226px]" data-node-id="15:681" data-name="Mask group">
+        <div className="-translate-x-1/2 absolute contents left-[calc(50%+377.52px)] top-[11226px]" data-node-id="15:683" data-name="Mask group">
+          <div className="-translate-x-1/2 absolute flex h-[601.513px] items-center justify-center left-[calc(50%+377.52px)] top-[11226px] w-[1047.037px]" data-node-id="15:685">
+            <div className="-scale-y-100 flex-none rotate-180">
+              <div className="h-[601.513px] mask-position-[0px_0px,_0px_0px,_0px_0px] mask-size-[1046.903px_601px,_1047.037px_601.514px,_1047.037px_601.514px] relative w-[1047.037px]" style={{ maskImage: `url("${imgImage173}"), url("${imgImage174}"), url("${imgImage175}")` }} data-name="image 173">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute h-[100.03%] left-[13.83%] max-w-none top-0 w-[86.2%]" src={imgImage176} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

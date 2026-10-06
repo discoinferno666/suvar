@@ -1,0 +1,3902 @@
+[
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/6de82.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/db3c1.png",
+    "style": {
+      "position": "absolute",
+      "height": "106.61%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "0",
+      "width": "100.01%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/33929.png",
+    "style": {
+      "position": "absolute",
+      "height": "100%",
+      "left": "-1.39%",
+      "max-width": "none",
+      "top": "0",
+      "width": "101.39%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/1ed5b.svg",
+    "style": {
+      "position": "absolute",
+      "display": "block",
+      "inset": "0",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/61981.png",
+    "style": {
+      "position": "absolute",
+      "max-width": "none",
+      "object-fit": "cover",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/258b2.png",
+    "style": {
+      "position": "absolute",
+      "height": "100%",
+      "left": "-44.1%",
+      "max-width": "none",
+      "top": "0",
+      "width": "160.54%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "142.84%",
+      "left": "0",
+      "max-width": "none",
+      "top": "1.05%",
+      "width": "150.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/a87fe.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/9941e.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/f7e89.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "127.63%",
+      "left": "-0.97%",
+      "max-width": "none",
+      "top": "-12.5%",
+      "width": "100.97%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/fb5ab.png",
+    "style": {
+      "position": "absolute",
+      "height": "401.72%",
+      "left": "-216.24%",
+      "max-width": "none",
+      "top": "-204.58%",
+      "width": "319.66%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/fb5ab.png",
+    "style": {
+      "position": "absolute",
+      "height": "401.72%",
+      "left": "-216.24%",
+      "max-width": "none",
+      "top": "-204.58%",
+      "width": "319.66%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/33f84.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/21bc3.png",
+    "style": {
+      "position": "absolute",
+      "height": "99.24%",
+      "left": "-1.85%",
+      "max-width": "none",
+      "top": "0",
+      "width": "102.34%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/f0e8d.png",
+    "style": {
+      "position": "absolute",
+      "height": "401.72%",
+      "left": "-247.94%",
+      "max-width": "none",
+      "top": "-6.3%",
+      "width": "356.19%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "131.67%",
+      "left": "-1.05%",
+      "max-width": "none",
+      "top": "-17.05%",
+      "width": "102.1%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/f0e8d.png",
+    "style": {
+      "position": "absolute",
+      "height": "396.05%",
+      "left": "-121.07%",
+      "max-width": "none",
+      "top": "-5.08%",
+      "width": "332.94%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/abee1.png",
+    "style": {
+      "position": "absolute",
+      "max-width": "none",
+      "object-fit": "cover",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/hero-kazan-corrected.png",
+    "style": {
+      "position": "absolute",
+      "max-width": "none",
+      "object-fit": "cover",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/23e41.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/9310d.png",
+    "style": {
+      "position": "absolute",
+      "height": "127.62%",
+      "left": "-57.77%",
+      "max-width": "none",
+      "top": "-27.62%",
+      "width": "169.38%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/7fbf1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/1f1cc.png",
+    "style": {
+      "position": "absolute",
+      "height": "163.29%",
+      "left": "-17.9%",
+      "max-width": "none",
+      "top": "-61.58%",
+      "width": "117.78%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/0e9ec.png",
+    "style": {
+      "position": "absolute",
+      "height": "100.02%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-0.02%",
+      "width": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/0e9ec.png",
+    "style": {
+      "position": "absolute",
+      "height": "100.02%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-0.02%",
+      "width": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/b50ee.svg",
+    "style": {
+      "display": "block",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/fb5ab.png",
+    "style": {
+      "position": "absolute",
+      "height": "406.38%",
+      "left": "-216.43%",
+      "max-width": "none",
+      "top": "-105.51%",
+      "width": "317.85%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/a9fcf.svg",
+    "style": {
+      "display": "block",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/435aa.png",
+    "style": {
+      "position": "absolute",
+      "height": "100.03%",
+      "left": "13.83%",
+      "max-width": "none",
+      "top": "0",
+      "width": "86.2%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "142.84%",
+      "left": "0",
+      "max-width": "none",
+      "top": "1.05%",
+      "width": "150.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "142.84%",
+      "left": "0",
+      "max-width": "none",
+      "top": "1.05%",
+      "width": "150.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "142.84%",
+      "left": "0",
+      "max-width": "none",
+      "top": "1.05%",
+      "width": "150.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "142.84%",
+      "left": "0",
+      "max-width": "none",
+      "top": "1.05%",
+      "width": "150.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "142.84%",
+      "left": "0",
+      "max-width": "none",
+      "top": "1.05%",
+      "width": "150.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "142.84%",
+      "left": "0",
+      "max-width": "none",
+      "top": "1.05%",
+      "width": "150.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/01d35.svg",
+    "style": {
+      "display": "block",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "142.84%",
+      "left": "0",
+      "max-width": "none",
+      "top": "1.05%",
+      "width": "150.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "142.84%",
+      "left": "0",
+      "max-width": "none",
+      "top": "1.05%",
+      "width": "150.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/1bf9f.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "142.84%",
+      "left": "0",
+      "max-width": "none",
+      "top": "1.05%",
+      "width": "150.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/003a7.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/33a3f.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/435aa.png",
+    "style": {
+      "position": "absolute",
+      "height": "100.03%",
+      "left": "13.83%",
+      "max-width": "none",
+      "top": "0",
+      "width": "86.2%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "264.22%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/ced76.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/a61f6.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/c9784.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/96a90.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "126.16%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "0",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "117.11%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-17.11%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "221.49%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-57.24%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "221.49%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-57.24%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "221.49%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-57.24%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "221.49%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-57.24%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "221.49%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-57.24%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "188.63%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-53.76%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "221.49%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-57.24%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "235.34%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-67.07%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "131.67%",
+      "left": "-1.05%",
+      "max-width": "none",
+      "top": "-17.05%",
+      "width": "102.1%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "131.67%",
+      "left": "-1.05%",
+      "max-width": "none",
+      "top": "-17.05%",
+      "width": "102.1%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "131.67%",
+      "left": "-1.05%",
+      "max-width": "none",
+      "top": "-17.05%",
+      "width": "102.1%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "131.67%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-17.05%",
+      "width": "101.39%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/99a6e.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/75c6d.png",
+    "style": {
+      "position": "absolute",
+      "height": "104.2%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-1.17%",
+      "width": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/b1950.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/cb4f5.png",
+    "style": {
+      "position": "absolute",
+      "height": "100%",
+      "left": "-13.26%",
+      "max-width": "none",
+      "top": "0",
+      "width": "127.13%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/06262.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "189.02%",
+      "left": "-189.6%",
+      "max-width": "none",
+      "top": "-25.7%",
+      "width": "289.58%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/fb5ab.png",
+    "style": {
+      "position": "absolute",
+      "height": "408.75%",
+      "left": "-112.14%",
+      "max-width": "none",
+      "top": "-110.5%",
+      "width": "324.28%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "334.75%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-234.65%",
+      "width": "123.08%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/fb5ab.png",
+    "style": {
+      "position": "absolute",
+      "height": "406.38%",
+      "left": "-216.43%",
+      "max-width": "none",
+      "top": "-105.51%",
+      "width": "317.85%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/6cc44.png",
+    "style": {
+      "position": "absolute",
+      "height": "194.06%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-45.94%",
+      "width": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "142.84%",
+      "left": "0",
+      "max-width": "none",
+      "top": "1.05%",
+      "width": "150.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/55d45.svg",
+    "style": {
+      "display": "block",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/435aa.png",
+    "style": {
+      "position": "absolute",
+      "height": "100.03%",
+      "left": "13.83%",
+      "max-width": "none",
+      "top": "0",
+      "width": "86.2%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/435aa.png",
+    "style": {
+      "position": "absolute",
+      "height": "100.03%",
+      "left": "13.83%",
+      "max-width": "none",
+      "top": "0",
+      "width": "86.2%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "131.67%",
+      "left": "-1.05%",
+      "max-width": "none",
+      "top": "-17.05%",
+      "width": "102.1%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/f0e8d.png",
+    "style": {
+      "position": "absolute",
+      "height": "432.72%",
+      "left": "-19.11%",
+      "max-width": "none",
+      "top": "-326.85%",
+      "width": "357.32%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "197.66%",
+      "left": "232.33%",
+      "max-width": "none",
+      "top": "-26.98%",
+      "width": "-209.11%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "207.46%",
+      "left": "256.73%",
+      "max-width": "none",
+      "top": "-31.13%",
+      "width": "-236.84%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "334.75%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-234.65%",
+      "width": "123.08%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "334.75%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-234.65%",
+      "width": "123.08%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/6aa33.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/227c7.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "100.81%",
+      "left": "6.01%",
+      "max-width": "none",
+      "top": "0",
+      "width": "88.04%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/f0e8d.png",
+    "style": {
+      "position": "absolute",
+      "height": "396.05%",
+      "left": "-128.66%",
+      "max-width": "none",
+      "top": "-103.39%",
+      "width": "349.53%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/494e9.svg",
+    "style": {
+      "position": "absolute",
+      "display": "block",
+      "inset": "0",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/6a3d5.svg",
+    "style": {
+      "position": "absolute",
+      "display": "block",
+      "inset": "0",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/82162.svg",
+    "style": {
+      "position": "absolute",
+      "display": "block",
+      "inset": "0",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/f0e8d.png",
+    "style": {
+      "position": "absolute",
+      "height": "401.72%",
+      "left": "-20.39%",
+      "max-width": "none",
+      "top": "-103.15%",
+      "width": "369.08%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/6b3be.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/279fc.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/8d8de.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/2b422.svg",
+    "style": {
+      "position": "absolute",
+      "display": "block",
+      "inset": "0",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/13512.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/2b422.svg",
+    "style": {
+      "position": "absolute",
+      "display": "block",
+      "inset": "0",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/904fd.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/abee1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/abee1.png",
+    "style": {
+      "position": "absolute",
+      "height": "100%",
+      "left": "-132.87%",
+      "max-width": "none",
+      "top": "0",
+      "width": "232.87%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/abee1.png",
+    "style": {
+      "position": "absolute",
+      "height": "100%",
+      "left": "0",
+      "max-width": "none",
+      "top": "0",
+      "width": "237.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/abee1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/abee1.png",
+    "style": {
+      "position": "absolute",
+      "height": "100%",
+      "left": "-132.87%",
+      "max-width": "none",
+      "top": "0",
+      "width": "232.87%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/abee1.png",
+    "style": {
+      "position": "absolute",
+      "height": "100%",
+      "left": "0",
+      "max-width": "none",
+      "top": "0",
+      "width": "237.99%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/b3795.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/b3795.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/6aa33.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": "15:806",
+    "src": "assets/chapter-four-left-branch.png",
+    "style": {
+      "position": "absolute",
+      "left": "0",
+      "top": "12522px",
+      "width": "113px",
+      "height": "672px"
+    }
+  },
+  {
+    "variant": "desktop",
+    "node": null,
+    "src": "assets/b3795.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/db3c1.png",
+    "style": {
+      "position": "absolute",
+      "max-width": "none",
+      "object-fit": "cover",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/33929.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/a7c3f.svg",
+    "style": {
+      "display": "block",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/435aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "126.16%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "0",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "117.11%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-17.11%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "221.49%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-57.24%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "221.49%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-57.24%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "221.49%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-57.24%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "221.49%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-57.24%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "221.49%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-57.24%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "188.63%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-53.76%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "221.49%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-57.24%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "235.34%",
+      "left": "-0.01%",
+      "max-width": "none",
+      "top": "-67.07%",
+      "width": "100.03%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "89.53%",
+      "left": "0.02%",
+      "max-width": "none",
+      "top": "-1.42%",
+      "width": "99.95%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/a87fe.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/9941e.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/f7e89.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/hero-kazan-corrected.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/10090.png",
+    "style": {
+      "position": "absolute",
+      "height": "126.97%",
+      "left": "-0.03%",
+      "max-width": "none",
+      "top": "-26.97%",
+      "width": "100.02%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/7fbf1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/1f1cc.png",
+    "style": {
+      "position": "absolute",
+      "height": "100.61%",
+      "left": "-0.02%",
+      "max-width": "none",
+      "top": "-0.03%",
+      "width": "100.05%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/0e9ec.png",
+    "style": {
+      "position": "absolute",
+      "height": "100.02%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-0.02%",
+      "width": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/f34a7.svg",
+    "style": {
+      "display": "block",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/5ea28.svg",
+    "style": {
+      "display": "block",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/435aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/f34a7.svg",
+    "style": {
+      "display": "block",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/f34a7.svg",
+    "style": {
+      "display": "block",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/fb5ab.png",
+    "style": {
+      "position": "absolute",
+      "height": "406.38%",
+      "left": "-216.43%",
+      "max-width": "none",
+      "top": "-105.51%",
+      "width": "317.85%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "89.53%",
+      "left": "0.02%",
+      "max-width": "none",
+      "top": "-1.42%",
+      "width": "99.95%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/f0e8d.png",
+    "style": {
+      "position": "absolute",
+      "height": "401.72%",
+      "left": "-247.94%",
+      "max-width": "none",
+      "top": "-6.3%",
+      "width": "356.19%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "124.53%",
+      "left": "-1.78%",
+      "max-width": "none",
+      "top": "-11.19%",
+      "width": "101.78%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/f0e8d.png",
+    "style": {
+      "position": "absolute",
+      "height": "396.05%",
+      "left": "-121.07%",
+      "max-width": "none",
+      "top": "-5.08%",
+      "width": "332.94%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/33f84.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/21bc3.png",
+    "style": {
+      "position": "absolute",
+      "height": "99.24%",
+      "left": "-1.85%",
+      "max-width": "none",
+      "top": "0",
+      "width": "102.34%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/1bf9f.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "127.63%",
+      "left": "-0.97%",
+      "max-width": "none",
+      "top": "-12.5%",
+      "width": "100.97%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/fb5ab.png",
+    "style": {
+      "position": "absolute",
+      "height": "401.72%",
+      "left": "-216.24%",
+      "max-width": "none",
+      "top": "-204.58%",
+      "width": "319.66%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "100.03%",
+      "left": "0.04%",
+      "max-width": "none",
+      "top": "-0.03%",
+      "width": "99.91%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/fb5ab.png",
+    "style": {
+      "position": "absolute",
+      "height": "401.72%",
+      "left": "-216.24%",
+      "max-width": "none",
+      "top": "-204.58%",
+      "width": "319.66%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "120.92%",
+      "left": "-1.06%",
+      "max-width": "none",
+      "top": "-10.92%",
+      "width": "102.11%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "113.45%",
+      "left": "0.05%",
+      "max-width": "none",
+      "top": "-9%",
+      "width": "102.1%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/75c6d.png",
+    "style": {
+      "position": "absolute",
+      "height": "104.2%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-1.17%",
+      "width": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/cb4f5.png",
+    "style": {
+      "position": "absolute",
+      "height": "100%",
+      "left": "-14.9%",
+      "max-width": "none",
+      "top": "0",
+      "width": "129.89%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/b1950.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/af7aa.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/99a6e.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "142.84%",
+      "left": "0",
+      "max-width": "none",
+      "top": "1.05%",
+      "width": "150.99%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/06262.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/fb5ab.png",
+    "style": {
+      "position": "absolute",
+      "height": "408.75%",
+      "left": "-112.14%",
+      "max-width": "none",
+      "top": "-110.5%",
+      "width": "324.28%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "189.02%",
+      "left": "-189.6%",
+      "max-width": "none",
+      "top": "-25.7%",
+      "width": "289.58%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/ced76.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/a61f6.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/c9784.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/96a90.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "189.02%",
+      "left": "-189.6%",
+      "max-width": "none",
+      "top": "-25.7%",
+      "width": "289.58%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/fb5ab.png",
+    "style": {
+      "position": "absolute",
+      "height": "406.38%",
+      "left": "-216.43%",
+      "max-width": "none",
+      "top": "-105.51%",
+      "width": "317.85%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "112.35%",
+      "left": "0.01%",
+      "max-width": "none",
+      "top": "-12.35%",
+      "width": "99.99%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "131.67%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-17.05%",
+      "width": "101.39%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/24d6c.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/6cc44.png",
+    "style": {
+      "position": "absolute",
+      "height": "194.06%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-45.94%",
+      "width": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/70214.png",
+    "style": {
+      "position": "absolute",
+      "height": "109.45%",
+      "left": "-0.06%",
+      "max-width": "none",
+      "top": "0.13%",
+      "width": "100.06%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/f0e8d.png",
+    "style": {
+      "position": "absolute",
+      "height": "432.72%",
+      "left": "-19.11%",
+      "max-width": "none",
+      "top": "-326.85%",
+      "width": "357.32%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.98%",
+      "left": "-0.17%",
+      "max-width": "none",
+      "top": "-1.98%",
+      "width": "101.19%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "189.02%",
+      "left": "-189.6%",
+      "max-width": "none",
+      "top": "-25.7%",
+      "width": "289.58%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "189.02%",
+      "left": "-189.6%",
+      "max-width": "none",
+      "top": "-25.7%",
+      "width": "289.58%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "334.75%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-234.65%",
+      "width": "123.08%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/45b01.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-position": "bottom",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/f0e8d.png",
+    "style": {
+      "position": "absolute",
+      "height": "396.05%",
+      "left": "-128.66%",
+      "max-width": "none",
+      "top": "-103.39%",
+      "width": "349.53%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/6b3be.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/279fc.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/1568c.svg",
+    "style": {
+      "position": "absolute",
+      "display": "block",
+      "inset": "0",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/fb512.svg",
+    "style": {
+      "position": "absolute",
+      "display": "block",
+      "inset": "0",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/ead3a.svg",
+    "style": {
+      "position": "absolute",
+      "display": "block",
+      "inset": "0",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "334.75%",
+      "left": "0",
+      "max-width": "none",
+      "top": "-234.65%",
+      "width": "123.08%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/d9afd.png",
+    "style": {
+      "position": "absolute",
+      "height": "189.02%",
+      "left": "-189.6%",
+      "max-width": "none",
+      "top": "-25.7%",
+      "width": "289.58%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/f0e8d.png",
+    "style": {
+      "position": "absolute",
+      "height": "401.72%",
+      "left": "-20.39%",
+      "max-width": "none",
+      "top": "-103.15%",
+      "width": "369.08%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/6aa33.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/13a57.svg",
+    "style": {
+      "position": "absolute",
+      "display": "block",
+      "inset": "0",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/13512.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/ad99e.svg",
+    "style": {
+      "position": "absolute",
+      "display": "block",
+      "inset": "0",
+      "max-width": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/904fd.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/3eea1.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/e9ea6.png",
+    "style": {
+      "position": "absolute",
+      "height": "101.97%",
+      "left": "-0.02%",
+      "max-width": "none",
+      "top": "-0.64%",
+      "width": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/8d8de.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  {
+    "variant": "mobile",
+    "node": null,
+    "src": "assets/b3795.png",
+    "style": {
+      "position": "absolute",
+      "inset": "0",
+      "max-width": "none",
+      "object-fit": "cover",
+      "pointer-events": "none",
+      "width": "100%",
+      "height": "100%"
+    }
+  }
+]

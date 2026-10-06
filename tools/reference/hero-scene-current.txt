@@ -1,0 +1,31 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/7a0a6c53-4958-41d3-aef8-f9275bed0495";
+const imgSceneBackground = `${assetPathPrefix}/23e41.png`;
+const imgSceneSofa = `${assetPathPrefix}/9310d.png`;
+const imgSceneCharacters = `${assetPathPrefix}/7fbf1.png`;
+const imgSceneTable = `${assetPathPrefix}/1f1cc.png`;
+
+export default function Scene() {
+  return (
+    <div className="contents" data-node-id="34:1115" data-name="Персонажи на диване">
+      <div className="-translate-x-1/2 absolute h-[977px] left-[calc(50%+166px)] top-[666px] w-[1308px]" data-node-id="34:1107" data-name="Фон">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgSceneBackground} />
+      </div>
+      <div className="-translate-x-1/2 absolute h-[977px] left-[calc(50%+300.97px)] top-[596px] w-[1307.936px]" data-node-id="34:1113" data-name="Диван">
+        <div aria-hidden className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0 overflow-hidden">
+            <img alt="" className="absolute h-[127.62%] left-[-57.77%] max-w-none top-[-27.62%] w-[169.38%]" src={imgSceneSofa} />
+          </div>
+          <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(270deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 11.386%, rgba(0, 0, 0, 0) 87.548%, rgb(0, 0, 0) 100%)" }} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute h-[592px] left-[calc(50%+161.5px)] top-[810px] w-[1051px]" data-node-id="15:459" data-name="Персонажи">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgSceneCharacters} />
+      </div>
+      <div className="-translate-x-1/2 absolute h-[473px] left-[calc(50%+301px)] top-[1130px] w-[1164px]" data-node-id="37:1118" data-name="Стол">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[163.29%] left-[-17.9%] max-w-none top-[-61.58%] w-[117.78%]" src={imgSceneTable} />
+        </div>
+      </div>
+    </div>
+  );
+}
