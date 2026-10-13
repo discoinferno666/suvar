@@ -56,8 +56,9 @@ function css(classes) {
 }
 function serialize(style){return Object.entries(style).map(([k,v])=>`${k}:${v}`).join(';');}
 const chapterIds={desktop:['15:443','15:416','15:594','15:731'],mobile:['15:889','15:909','15:924','15:1034']};
-const photoIds={desktop:['15:576','15:577','15:578','15:579','15:627','15:628','15:629','15:630','15:639','15:761','15:777'],mobile:['15:987','15:988','15:989','15:990','15:982','15:1006','15:1066','15:1082']};
+const photoIds={desktop:['15:576','15:577','15:578','15:579','15:627','15:628','15:629','15:630','15:639','15:761','15:777'],mobile:['15:956','15:958','15:960','15:979','15:987','15:988','15:989','15:990','15:982','15:1006','15:1066','15:1082']};
 const artRoots=[];
+const resultsDisclaimer = '<p class="results-disclaimer" role="note">Числовые данные в кейсе скрыты или умножены на единый дробный коэффициент. Это сделано, чтобы скрыть коммерческую информацию, но отразить общую динамику по проекту.</p>';
 for(const variant of ['desktop','mobile']) {
   const resultSpace = variant === 'desktop' ? 0 : 360;
   const resultStart = variant === 'desktop' ? 14264 : 13985;
@@ -91,6 +92,11 @@ for(const variant of ['desktop','mobile']) {
     const omitSubtitle = ['15:417', '15:598', '15:910', '15:925'].includes(id);
     // Make room after chapter IV's final paragraph without moving earlier chapters.
     const top = style.top?.endsWith('px') ? parseFloat(style.top) : null;
+    // Use the space left by the removed subtitle for the note. Only the two
+    // opening mobile groups move; the remaining collage keeps its coordinates.
+    if (variant === 'mobile' && ['15:926','15:927','15:928','15:929','15:930','15:931','15:932','15:933','15:934'].includes(id) && top !== null) {
+      style.top = `${top + 24}px`;
+    }
     const moved = style.position === 'absolute' && top !== null && (moveContents || top >= resultStart);
     if (moved) style.top = `${top + resultSpace}px`;
     if (['15:409', '15:829', '15:729', '15:831'].includes(id)) style.height = `${parseFloat(style.height) + resultSpace}px`;
@@ -156,7 +162,7 @@ for(const variant of ['desktop','mobile']) {
       if(path==='assets/1bf9f.png')body+='<span class="lantern-glow lantern-glow--books" aria-hidden="true"></span>';
     }
     if(omitSubtitle)return '';
-    return `<${tag} ${Object.entries(attrs).map(([k,v])=>`${k}="${escape(v)}"`).join(' ')}>${['img','br'].includes(tag)?'':body+`</${tag}>`}`;
+    return `<${tag} ${Object.entries(attrs).map(([k,v])=>`${k}="${escape(v)}"`).join(' ')}>${['img','br'].includes(tag)?'':body+`</${tag}>`}` + (['15:594','15:924'].includes(id) ? resultsDisclaimer : '');
   }
   const exp=ast.program.body.find(n=>n.type==='ExportDefaultDeclaration');
   const root=exp.declaration.body.body.find(n=>n.type==='ReturnStatement').argument;

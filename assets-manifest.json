@@ -1257,7 +1257,7 @@
   {
     "variant": "desktop",
     "node": null,
-    "src": "assets/99a6e.png",
+    "src": "assets/tables/99a6e.png",
     "style": {
       "position": "absolute",
       "inset": "0",
@@ -1271,7 +1271,7 @@
   {
     "variant": "desktop",
     "node": null,
-    "src": "assets/75c6d.png",
+    "src": "assets/tables/75c6d.png",
     "style": {
       "position": "absolute",
       "height": "104.2%",
@@ -1284,7 +1284,7 @@
   {
     "variant": "desktop",
     "node": null,
-    "src": "assets/b1950.png",
+    "src": "assets/tables/b1950.png",
     "style": {
       "position": "absolute",
       "inset": "0",
@@ -1298,7 +1298,7 @@
   {
     "variant": "desktop",
     "node": null,
-    "src": "assets/cb4f5.png",
+    "src": "assets/tables/cb4f5.png",
     "style": {
       "position": "absolute",
       "height": "100%",
@@ -1419,7 +1419,7 @@
   {
     "variant": "desktop",
     "node": null,
-    "src": "assets/6cc44.png",
+    "src": "assets/tables/6cc44.png",
     "style": {
       "position": "absolute",
       "height": "194.06%",
@@ -3062,7 +3062,7 @@
   {
     "variant": "mobile",
     "node": null,
-    "src": "assets/75c6d.png",
+    "src": "assets/tables/75c6d.png",
     "style": {
       "position": "absolute",
       "height": "104.2%",
@@ -3075,7 +3075,7 @@
   {
     "variant": "mobile",
     "node": null,
-    "src": "assets/cb4f5.png",
+    "src": "assets/tables/cb4f5.png",
     "style": {
       "position": "absolute",
       "height": "100%",
@@ -3088,7 +3088,7 @@
   {
     "variant": "mobile",
     "node": null,
-    "src": "assets/b1950.png",
+    "src": "assets/tables/b1950.png",
     "style": {
       "position": "absolute",
       "inset": "0",
@@ -3172,7 +3172,7 @@
   {
     "variant": "mobile",
     "node": null,
-    "src": "assets/99a6e.png",
+    "src": "assets/tables/99a6e.png",
     "style": {
       "position": "absolute",
       "inset": "0",
@@ -3417,7 +3417,7 @@
   {
     "variant": "mobile",
     "node": null,
-    "src": "assets/6cc44.png",
+    "src": "assets/tables/6cc44.png",
     "style": {
       "position": "absolute",
       "height": "194.06%",

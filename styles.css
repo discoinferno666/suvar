@@ -50,3 +50,5 @@
 .story-copy,.chapter-heading,.design-layer a,.expandable,.expandable .design-layer,.gallery-control,.gallery-slide,.campaign-results{pointer-events:auto}
 main{position:relative}.nav-sentinel{position:absolute;top:480px;left:0;width:1px;height:1px;pointer-events:none}@media(max-width:1099px){.nav-sentinel{top:600px}}
 @media(prefers-reduced-motion:reduce){.cursor-fireflies{display:none}}
+.results-disclaimer{position:absolute;top:4142px;left:238px;width:1033px;color:#1a1108;font-size:14px;line-height:20px;font-weight:400}
+.case-art--mobile .results-disclaimer{top:4036px;left:21px;width:388px}

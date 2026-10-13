@@ -7,6 +7,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const sourceDirectory = resolve(root, 'assets');
 const outputDirectory = resolve(sourceDirectory, 'optimized');
 const upscaledDirectory = resolve(sourceDirectory, 'Upscaled');
+const tablesDirectory = resolve(sourceDirectory, 'tables');
 const isImage = /\.(?:jpe?g|png)$/i;
 const toUrl = file => relative(root, file).split(sep).join('/');
 const overrides = JSON.parse(await readFile(new URL('./image-overrides.json', import.meta.url), 'utf8'));
@@ -25,11 +26,11 @@ async function findImages(directory) {
 const files = await findImages(sourceDirectory);
 const sourceUrls = new Set(files.map(toUrl));
 for (const [original, replacement] of Object.entries(overrides)) {
-  if (!sourceUrls.has(original) || !sourceUrls.has(replacement) || !replacement.startsWith('assets/Upscaled/')) {
+  if (!sourceUrls.has(original) || !sourceUrls.has(replacement) || !/^(?:assets\/Upscaled\/|assets\/tables\/)/.test(replacement)) {
     throw new Error(`Invalid image override: ${original} -> ${replacement}`);
   }
 }
-// Do not generate unused low-resolution copies of branches that have replacements.
+// Do not generate outdated branches or tables that have replacements.
 const selectedFiles = files.filter(file => !Object.hasOwn(overrides, toUrl(file)));
 // Only this generated directory is cleared; originals are never written to.
 await rm(outputDirectory, { recursive: true, force: true });
@@ -40,6 +41,9 @@ let optimizedBytes = 0;
 let upscaledBytes = 0;
 let upscaledOptimizedBytes = 0;
 let upscaledCount = 0;
+let tablesBytes = 0;
+let tablesOptimizedBytes = 0;
+let tablesCount = 0;
 
 for (const source of selectedFiles) {
   const sourcePath = relative(sourceDirectory, source);
@@ -47,8 +51,9 @@ for (const source of selectedFiles) {
   const output = join(outputDirectory, `${sourcePath}.webp`);
   await mkdir(dirname(output), { recursive: true });
   const isUpscaled = source.startsWith(upscaledDirectory + sep);
+  const isTable = source.startsWith(tablesDirectory + sep);
   const image = sharp(source).autoOrient();
-  const info = await (isUpscaled
+  const info = await (isUpscaled || isTable
     // Keep every pixel, including transparent RGB values, and the full upscale size.
     ? image.webp({ lossless: true, exact: true, effort: 6 })
     : image.resize({ width: 1920, withoutEnlargement: true }).webp({ quality: 80 })
@@ -64,6 +69,11 @@ for (const source of selectedFiles) {
     upscaledBytes += sourceBytes;
     upscaledOptimizedBytes += info.size;
   }
+  if (isTable) {
+    tablesCount++;
+    tablesBytes += sourceBytes;
+    tablesOptimizedBytes += info.size;
+  }
 }
 
 for (const [original, replacement] of Object.entries(overrides)) {
@@ -75,4 +85,5 @@ await writeFile(join(outputDirectory, 'manifest.json'), `${JSON.stringify(manife
 const megabytes = bytes => (bytes / 1024 / 1024).toFixed(2);
 console.log(`Optimized ${selectedFiles.length} images: ${megabytes(originalBytes)} MB -> ${megabytes(optimizedBytes)} MB.`);
 console.log(`Upscaled: ${upscaledCount} lossless WebP images at full resolution, ${megabytes(upscaledBytes)} MB -> ${megabytes(upscaledOptimizedBytes)} MB.`);
+console.log(`Tables: ${tablesCount} lossless WebP images at full resolution, ${megabytes(tablesBytes)} MB -> ${megabytes(tablesOptimizedBytes)} MB.`);
 console.log('Other images: WebP quality 80, maximum width 1920 px, no enlargement. Output: assets/optimized/');
