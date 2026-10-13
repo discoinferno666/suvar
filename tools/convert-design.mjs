@@ -1,6 +1,6 @@
 import { parse } from '@babel/parser';
 import { readFile, writeFile } from 'node:fs/promises';
-import { renderCampaignResults, renderVideoGallery } from './campaign-media.mjs';
+import { renderCampaignRail, renderMobileCampaignResults, renderVideoGallery } from './campaign-media.mjs';
 const unknown = new Set();
 const escape = s => String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const cssRules = [];
@@ -20,7 +20,7 @@ function css(classes) {
     'left-0':{left:'0'},'top-0':{top:'0'},'left-px':{left:'1px'},'top-px':{top:'1px'},'left-1/2':{left:'50%'},'inset-0':{inset:'0'},
     'overflow-hidden':{overflow:'hidden'},'overflow-clip':{overflow:'clip'},'max-w-none':{'max-width':'none'},'pointer-events-none':{'pointer-events':'none'},
     'object-cover':{'object-fit':'cover'},'object-bottom':{'object-position':'bottom'},'whitespace-nowrap':{'white-space':'nowrap'},'whitespace-pre-wrap':{'white-space':'pre-wrap'},
-    'leading-none':{'line-height':'1'},'mb-0':{'margin-bottom':'0'},'border-3':{'border-width':'3px'},'border-solid':{'border-style':'solid'},
+    'leading-none':{'line-height':'1'},'mb-0':{'margin-bottom':'0'},'border-3':{'border-width':'3px'},'border-4':{'border-width':'4px'},'border-solid':{'border-style':'solid'},
     'cursor-pointer':{cursor:'pointer'},underline:{'text-decoration-line':'underline'},'decoration-solid':{'text-decoration-style':'solid'},'decoration-from-font':{'text-decoration-thickness':'from-font'},
     'mask-alpha':{'mask-mode':'alpha'},'mask-intersect':{'mask-composite':'intersect'},'mask-no-clip':{'mask-clip':'no-clip'},'mask-no-repeat':{'mask-repeat':'no-repeat'}
   };
@@ -59,7 +59,7 @@ const chapterIds={desktop:['15:443','15:416','15:594','15:731'],mobile:['15:889'
 const photoIds={desktop:['15:576','15:577','15:578','15:579','15:627','15:628','15:629','15:630','15:639','15:761','15:777'],mobile:['15:987','15:988','15:989','15:990','15:982','15:1006','15:1066','15:1082']};
 const artRoots=[];
 for(const variant of ['desktop','mobile']) {
-  const resultSpace = variant === 'desktop' ? 560 : 360;
+  const resultSpace = variant === 'desktop' ? 0 : 360;
   const resultStart = variant === 'desktop' ? 14264 : 13985;
   const source = await readFile(`tools/reference/${variant}-current.txt`,'utf8');
   const ast=parse(source,{sourceType:'module',plugins:['jsx']});
@@ -110,7 +110,7 @@ for(const variant of ['desktop','mobile']) {
     if(strokeMap[id]){style['-webkit-text-stroke']=`${strokeMap[id][0]}px ${strokeMap[id][1]}`;style['paint-order']='stroke fill';}
     const isText=classes.includes("font-['")&&tag!=='a';
     const isChapter=chapterIds[variant].includes(id);
-    if(root){tag='article';attrs.class=`case-art case-art--${variant}`;attrs['data-width']=variant==='desktop'?1440:430;attrs['data-height']=15432+resultSpace;attrs.style=`--art-height:${15432+resultSpace}px`;attrs['aria-label']='Кейс рекламной кампании Суварстроит';delete style.position;delete style.width;delete style.height;}
+    if(root){const height=variant==='desktop'?15988:15432+resultSpace;tag='article';attrs.class=`case-art case-art--${variant}`;attrs['data-width']=variant==='desktop'?1440:430;attrs['data-height']=height;attrs.style=`--art-height:${height}px`;attrs['aria-label']='Кейс рекламной кампании Суварстроит';delete style.position;delete style.width;delete style.height;}
     else {
       attrs.class=`design-layer layer-${++seq}`;
       if((isText && style.position==='absolute') || ['15:501','15:880','15:884'].includes(id))attrs.class+=' story-copy';
@@ -126,9 +126,10 @@ for(const variant of ['desktop','mobile']) {
       if(controls.includes(id)){tag='button';attrs.type='button';attrs.class+=' gallery-control';attrs['data-direction']=controls.indexOf(id)===0?'previous':'next';attrs['aria-label']=controls.indexOf(id)===0?'Предыдущий материал':'Следующий материал';}
       if(id===(variant==='desktop'?'15:750':'15:1039'))attrs.class+=' gallery-window';
       if(id===(variant==='desktop'?'15:751':'15:1041'))attrs.class+=' gallery-frame';
+      if(id==='61:18'){tag='section';attrs.class+=' campaign-results';attrs['aria-label']='Ролики для наружной рекламы';}
+      if(id==='63:31'){tag='h3';attrs.class+=' campaign-billboard-title';}
       if(id===(variant==='desktop'?'15:743':'15:1046')) {
         attrs.class+=' gallery-pagination';
-        if(variant==='desktop')style.top='13505px';
       }
       if(!omitSubtitle)cssRules.push(`.layer-${seq}{${serialize(style)}}`);
     }
@@ -143,8 +144,8 @@ for(const variant of ['desktop','mobile']) {
     let body=isolatedBranch?'<img src="assets/chapter-four-left-branch.png" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;pointer-events:none">':node.children.map(n=>render(n,false,positionedTop,style.display==='contents'&&(moved||moveContents),extendPaper||id==='15:831')).join('');
     if(isolatedBranch)manifests.push({variant,node:id,src:'assets/chapter-four-left-branch.png',style});
     if(attrs.class?.includes('gallery-window'))body+=renderVideoGallery();
-    if(attrs.class?.includes('gallery-pagination'))body=['Су Анасы','Шурале'].map((name,index)=>`<button type="button" data-gallery-index="${index}" aria-label="Показать видео: ${name}" aria-pressed="${index===0}"></button>`).join('');
-    if(root)body+=renderCampaignResults(variant);
+    if(id==='61:18')body=renderCampaignRail(variant);
+    if(root&&variant==='mobile')body+=renderMobileCampaignResults();
     // The lanterns are painted into the original transparent source images.
     // Add light at their exact local image coordinates; preserve the source art.
     if(node.children.some(n=>n.type==='JSXElement'&&n.openingElement.name.name==='img')){
@@ -170,5 +171,6 @@ await writeFile('index.html',`<!doctype html>
 <nav class="chapter-nav" aria-label="Навигация по кейсу"><a class="nav-brand" href="#case">#СУВАРСТРОИТ</a><button class="chapter-toggle" aria-expanded="false" aria-controls="chapter-links">Главы <span aria-hidden="true">+</span></button><div id="chapter-links" class="chapter-links"><button data-chapter="1">Идея</button><button data-chapter="2">Герои</button><button data-chapter="3">Эксперимент</button><button data-chapter="4">Продолжение</button></div><button class="motion-toggle" aria-pressed="false" aria-label="Отключить анимации">Анимация: вкл.</button></nav>
 <main id="case"><span class="nav-sentinel" aria-hidden="true"></span><div class="art-shell">${artRoots.join('\n')}</div></main>
 <dialog class="image-dialog" aria-label="Увеличенное изображение"><button class="dialog-close" aria-label="Закрыть изображение">×</button><img class="dialog-image" alt=""><p class="dialog-caption"></p></dialog>
+<dialog class="video-dialog" aria-labelledby="video-dialog-title"><button class="dialog-close" aria-label="Закрыть видео">×</button><video class="dialog-video" controls playsinline preload="metadata"></video><p id="video-dialog-title" class="dialog-caption"></p></dialog>
 <button class="back-to-top" aria-label="Вернуться к началу">↑</button><script defer src="assets/gsap.min.js"></script><script defer src="assets/ScrollTrigger.min.js"></script><script defer src="effects.js"></script><script defer src="script.js"></script></body></html>`);
 console.log(`Converted ${seq} layers to native HTML/CSS; ${manifests.length} image placements.`);

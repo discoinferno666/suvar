@@ -1,0 +1,245 @@
+const imgImage87 = "assets/e9ea6.png";
+const imgImage84 = "assets/f0e8d.png";
+const imgImage72 = "assets/abee1.png";
+const imgImage176 = "assets/45b01.png";
+const imgImage158 = "assets/3eea1.png";
+const imgImage137 = "assets/6aa33.png";
+const imgImage140 = "assets/227c7.png";
+const imgImage138 = "assets/5535c.png";
+const imgImage171 = "assets/6b3be.png";
+const imgImage172 = "assets/279fc.png";
+const imgImage183 = "assets/8d8de.png";
+const imgImageWithFallback3 = "assets/13512.png";
+const imgImageWithFallback1 = "assets/904fd.png";
+const imgImage141 = "assets/a8189.png";
+const imgImage142 = "assets/b3795.png";
+const imgFrame714 = "assets/494e9.svg";
+const imgFrame715 = "assets/6a3d5.svg";
+const imgGroup24 = "assets/82162.svg";
+const imgUnion = "assets/2b422.svg";
+const imgImageWithFallback2 = "assets/4e400.svg";
+const imgImage139 = "assets/c7bb2.svg";
+const imgImage135 = "assets/36921.svg";
+const imgImage145 = "assets/0b82b.svg";
+
+export default function ChapterFour() {
+  return (<div data-node-id="15:408">
+<div className="-translate-x-1/2 absolute h-[638px] left-[calc(50%-2.5px)] top-[15350px] w-[1915px]" data-node-id="15:728" data-name="image 140">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage140} />
+      </div>
+<div className="-translate-x-1/2 absolute h-[1432px] left-[calc(50%-6px)] top-[13854px] w-[1392px]" data-node-id="15:729" data-name="image 138">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[101.98%] left-[-0.17%] max-w-none top-[-1.98%] w-[101.19%]" src={imgImage138} />
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute h-[1030px] left-[calc(50%-2px)] top-[12795.5px] w-[1384px]" data-node-id="15:730" data-name="image 136">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[101.98%] left-[-0.17%] max-w-none top-[-1.98%] w-[101.19%]" src={imgImage87} />
+        </div>
+      </div>
+<div className="-translate-x-1/2 -translate-y-1/2 [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute flex flex-col font-['Lora:Bold'] font-bold justify-center leading-[0] left-[calc(50%+1.5px)] text-[#486049] text-[0px] text-center top-[12981.5px] w-[673px]" data-node-id="15:731">
+        <p className="font-['Inter:Black'] font-black not-italic text-[40px]">
+          <span className="leading-[1.5]">{`Глава IV. `}</span>
+          <span className="leading-[1.5] text-[#1a1108]">Масштабирование</span>
+        </p>
+      </div>
+<p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[1.5] left-[calc(50%-2.5px)] not-italic text-[#1a1108] text-[16px] text-center top-[13019px] w-[729px]" data-node-id="15:732">
+        После успешного старта в Директе мы вместе с клиентом приняли решение масштабировать кампанию на наружную рекламу, задействовав цифровые билборды (DOOH) на улицах Казани.
+      </p>
+<p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[0] left-[calc(50%-499px)] not-italic text-[#1a1108] text-[16px] top-[13232px] w-[381px] whitespace-pre-wrap" data-node-id="15:733">
+        <span className="font-['Inter:Bold'] font-bold leading-[1.5] text-[#e8192c]">{`                                ля экранов`}</span>
+        <span className="leading-[1.5]">
+          {` персонажей требовалось «оживить», и нейросетевая анимация тут же подкинула сюрпризов. `}
+          <br aria-hidden />
+          <br aria-hidden />
+        </span>
+      </p>
+<p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[0] left-[calc(50%-499px)] not-italic text-[#1a1108] text-[16px] top-[13336px] w-[381px]" data-node-id="15:734">
+        <span className="font-['Inter:Bold'] font-bold leading-[1.5]">Су Анасы</span>
+        <span className="leading-[1.5]">{` выдавала хаотичные жесты, лягушка норовила выпрыгнуть прямо в камеру, вынуждая нас бесконечно менять промпты, а огнедышащий `}</span>
+        <span className="font-['Inter:Bold'] font-bold leading-[1.5]">Зилант</span>
+        <span className="leading-[1.5]">{` на первых генерациях и вовсе едва не «спалил» квартиру.`}</span>
+      </p>
+<div className="-translate-x-1/2 absolute h-[417px] left-[calc(50%+9px)] top-[15497px] w-[772px]" data-node-id="15:735" data-name="image 142">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[100.81%] left-[6.01%] max-w-none top-0 w-[88.04%]" src={imgImage87} />
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute h-[134px] left-[calc(50%-438px)] top-[13126px] w-[122px]" data-node-id="15:736" data-name="image 110">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[396.05%] left-[-128.66%] max-w-none top-[-103.39%] w-[349.53%]" src={imgImage84} />
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute flex h-[44.517px] items-center justify-center left-[calc(50%+185.75px)] top-[13499px] w-[51.5px]" data-node-id="15:737">
+        <div className="-scale-y-100 flex-none rotate-180">
+          <div className="h-[44.517px] relative w-[51.5px]">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame714} />
+          </div>
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute h-[44.517px] left-[calc(50%+316.75px)] top-[13499px] w-[51.5px]" data-node-id="15:740">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame715} />
+      </div>
+<div className="-translate-x-1/2 absolute h-[10px] left-[calc(50%+250.5px)] top-[13516px] w-[35px]" data-node-id="15:743">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup24} />
+      </div>
+<div className="-translate-x-1/2 absolute h-[160px] left-[calc(50%-279px)] top-[14002px] w-[140px]" data-node-id="15:747" data-name="image 110">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[401.72%] left-[-20.39%] max-w-none top-[-103.15%] w-[369.08%]" src={imgImage84} />
+        </div>
+      </div>
+<p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[0] left-[calc(50%-343px)] not-italic text-[16px] text-black top-[14125px] w-[683px] whitespace-pre-wrap" data-node-id="15:748">
+        <span className="leading-[1.5]">{`                            `}</span>
+        <span className="font-['Inter:Bold'] font-bold leading-[1.5] text-[#e8192c]">отовые ролики</span>
+        <span className="leading-[1.5]">{` вышли на баннерах и digital-экранах Казани, а клиент с нашей подачи адаптировал их для метро и кинотеатров. Такой омниканальный охват, смелый креатив и попадание в культурный код отлично сработали на узнаваемость бренда и лояльность аудитории.`}</span>
+      </p>
+<p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold_Italic'] font-semibold italic leading-[1.5] left-[calc(50%+13.5px)] text-[#372a0f] text-[21px] text-center top-[15586px] w-[509px]" data-node-id="15:749">
+        “Силами нашей креативной продакшен-команды кампания получилась гибкой и масштабируемой — от баннера для Директа до гигантского медиафасада. А через теплые, узнаваемые образы мы точечно «попали» в боли аудитории, органично раскрыв ценности и УТП застройщика.”
+      </p>
+<div className="-translate-x-1/2 absolute h-[442px] left-[calc(50%+250.5px)] top-[13085px] w-[737px]" data-node-id="15:750" data-name="image 171">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage171} />
+      </div>
+<div className="-translate-x-1/2 absolute h-[442px] left-[calc(50%+250.5px)] top-[13094px] w-[737px]" data-node-id="15:751" data-name="image 172">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage172} />
+      </div>
+<div className="-translate-x-1/2 absolute content-stretch flex gap-[5px] items-center left-[calc(50%+13.5px)] p-[10px] top-[15820px]" data-node-id="15:752">
+        <div className="relative shrink-0 size-[18px]" data-node-id="15:753" data-name="image 181">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage183} />
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[1.5] not-italic relative shrink-0 text-[#372a0f] text-[16px] text-center whitespace-nowrap" data-node-id="15:754">
+          Команда Reaspekt Creative
+        </p>
+      </div>
+<div className="-translate-x-1/2 absolute contents left-[calc(50%+264px)] top-[14665px]" data-node-id="15:755">
+        <div className="-translate-x-1/2 absolute contents left-[calc(50%+264.5px)] top-[14693px]" data-node-id="15:756">
+          <div className="-translate-x-1/2 absolute h-[362.255px] left-[calc(50%+264.5px)] top-[14693px] w-[465px]" data-node-id="15:757" data-name="Union">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
+          </div>
+          <div className="-translate-x-1/2 absolute contents left-[calc(50%+264.5px)] top-[14703px]" data-node-id="15:761" data-name="Mask group">
+            <div className="-translate-x-1/2 absolute h-[342px] left-[calc(50%+237px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[55px_0px] mask-size-[439px_342px] top-[14703px] w-[494px]" data-node-id="15:766" style={{ maskImage: `url("${imgImageWithFallback2}")` }} data-name="ImageWithFallback 2">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImageWithFallback3} />
+            </div>
+          </div>
+        </div>
+        <div className="-translate-x-1/2 absolute left-[calc(50%+496.5px)] size-[55px] top-[14846px]" data-node-id="15:767" data-name="image 165">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage158} />
+        </div>
+        <div className="-translate-x-1/2 absolute left-[calc(50%+31.5px)] size-[55px] top-[14846px]" data-node-id="15:768" data-name="image 166">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage158} />
+        </div>
+        <div className="-translate-x-1/2 absolute left-[calc(50%+264.5px)] size-[55px] top-[14665px]" data-node-id="15:769" data-name="image 167">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage158} />
+        </div>
+        <div className="-translate-x-1/2 absolute left-[calc(50%+264.5px)] size-[55px] top-[15027px]" data-node-id="15:770" data-name="image 168">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage158} />
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute contents left-[calc(50%-277px)] top-[14665px]" data-node-id="15:771">
+        <div className="-translate-x-1/2 absolute contents left-[calc(50%-277.5px)] top-[14693px]" data-node-id="15:772">
+          <div className="-translate-x-1/2 absolute h-[362.255px] left-[calc(50%-277.5px)] top-[14693px] w-[465px]" data-node-id="15:773" data-name="Union">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
+          </div>
+          <div className="-translate-x-1/2 absolute contents left-[calc(50%-277.5px)] top-[14703px]" data-node-id="15:777" data-name="Mask group">
+            <div className="-translate-x-1/2 absolute h-[342px] left-[calc(50%-277px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[27px_0px] mask-size-[439px_342px] top-[14703px] w-[494px]" data-node-id="15:782" style={{ maskImage: `url("${imgImageWithFallback2}")` }} data-name="ImageWithFallback 1">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImageWithFallback1} />
+            </div>
+          </div>
+        </div>
+        <div className="-translate-x-1/2 absolute left-[calc(50%-44.5px)] size-[55px] top-[14846px]" data-node-id="15:783" data-name="image 169">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage158} />
+        </div>
+        <div className="-translate-x-1/2 absolute left-[calc(50%-509.5px)] size-[55px] top-[14846px]" data-node-id="15:784" data-name="image 170">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage158} />
+        </div>
+        <div className="-translate-x-1/2 absolute left-[calc(50%-276.5px)] size-[55px] top-[14665px]" data-node-id="15:785" data-name="image 171">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage158} />
+        </div>
+        <div className="-translate-x-1/2 absolute left-[calc(50%-276.5px)] size-[55px] top-[15027px]" data-node-id="15:786" data-name="image 172">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage158} />
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute contents left-[calc(50%-17px)] top-[12729px]" data-node-id="15:787">
+        <div className="-translate-x-1/2 absolute h-[1137px] left-[calc(50%-10px)] top-[12729px] w-[1516px]" data-node-id="15:788" data-name="image 173">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage72} />
+        </div>
+        <div className="-translate-x-1/2 absolute h-[1137px] left-[calc(50%-1093.5px)] top-[12729px] w-[651px]" data-node-id="15:789" data-name="image 175">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-full left-[-132.87%] max-w-none top-0 w-[232.87%]" src={imgImage72} />
+          </div>
+        </div>
+        <div className="-translate-x-1/2 absolute h-[1137px] left-[calc(50%+1066.5px)] top-[12729px] w-[637px]" data-node-id="15:790" data-name="image 176">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[237.99%]" src={imgImage72} />
+          </div>
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute contents left-[calc(50%-17px)] top-[13786px]" data-node-id="15:791">
+        <div className="-translate-x-1/2 absolute h-[1137px] left-[calc(50%-1093.5px)] top-[13786px] w-[651px]" data-node-id="15:793" data-name="image 175">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-full left-[-132.87%] max-w-none top-0 w-[232.87%]" src={imgImage72} />
+          </div>
+        </div>
+        <div className="-translate-x-1/2 absolute h-[1137px] left-[calc(50%+1066.5px)] top-[13786px] w-[637px]" data-node-id="15:794" data-name="image 176">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[237.99%]" src={imgImage72} />
+          </div>
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute flex h-[511px] items-center justify-center left-[calc(50%+489px)] top-[12478px] w-[1676px]" data-node-id="15:795">
+        <div className="-scale-y-100 flex-none rotate-180">
+          <div className="h-[511px] relative w-[1676px]" data-name="image 127">
+            <img alt="" className="absolute inset-0 max-w-none object-bottom pointer-events-none size-full" src={imgImage176} />
+          </div>
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute contents left-[calc(50%-855.54px)] top-[12522px]" data-node-id="15:806" data-name="Mask group">
+        <div className="-translate-x-1/2 absolute flex h-[1086px] items-center justify-center left-[calc(50%-374.5px)] top-[12382.5px] w-[1448px]" data-node-id="15:808">
+          <div className="-scale-y-100 flex-none rotate-180">
+            <div className="h-[1086px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-5.999px_139px] mask-size-[497.915px_672.206px] relative w-[1448px]" style={{ maskImage: `url("${imgImage139}")` }} data-name="image 136">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage141} />
+            </div>
+          </div>
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute contents left-[calc(50%-426.5px)] top-[12550px]" data-node-id="15:809" data-name="Mask group">
+        <div className="-translate-x-1/2 absolute h-[1086px] left-[calc(50%-422px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[1.5px_700.113px] mask-size-[1436px_408.887px] top-[11849.39px] w-[1448px]" data-node-id="15:811" style={{ maskImage: `url("${imgImage135}")` }} data-name="image 135">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage142} />
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute h-[267px] left-[calc(50%+0.5px)] overflow-clip top-[14274px] w-[1007px]" data-node-id="61:18">
+        <div className="absolute h-[246.761px] left-[6px] top-[11px] w-[493.521px]" data-node-id="62:30">
+          <div className="absolute border-4 border-[#b8892a] border-solid h-[246.761px] left-0 top-0 w-[493.521px]" data-node-id="61:23" data-name="зилант 6на3 (1440x720) 1" />
+        </div>
+        <div className="absolute border-4 border-[#b8892a] border-solid h-[246.761px] left-[528px] top-[11px] w-[493.521px]" data-node-id="61:24" data-name="су анасы 6на3 (1440x720) 1" />
+        <div className="absolute border-4 border-[#b8892a] border-solid h-[246.761px] left-[1042px] top-[11px] w-[493.521px]" data-node-id="61:25" data-name="шурале 6на3 (1440x720) 1" />
+      </div>
+<div className="-translate-y-1/2 [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute flex flex-col font-['Inter:Black'] font-black justify-center leading-[0] left-[calc(50%-189px)] not-italic text-[#486049] text-[24px] top-[14607.5px] whitespace-nowrap" data-node-id="63:31">
+        <p className="leading-[1.5]">Наши персонажи на билбордах:</p>
+      </div>
+<div className="-translate-x-1/2 absolute h-[1514px] left-[calc(50%-3px)] top-[13836px] w-[1516px]" data-node-id="63:33" data-name="image 177">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage72} />
+      </div>
+<div className="-translate-x-1/2 absolute contents left-[calc(50%-606.5px)] top-[13664px]" data-node-id="15:800" data-name="Mask group">
+        <div className="-translate-x-1/2 absolute h-[1086px] left-[calc(50%-602px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[1.5px_700.113px] mask-size-[1436px_408.887px] top-[12963.39px] w-[1448px]" data-node-id="15:802" style={{ maskImage: `url("${imgImage135}")` }} data-name="image 135">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage142} />
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute contents left-[calc(50%+469px)] top-[13415px]" data-node-id="15:803" data-name="Mask group">
+        <div className="-translate-x-1/2 absolute h-[1630.37px] left-[calc(50%-253.17px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[1435.583px_208.927px] mask-size-[747px_1008.553px] top-[13205.57px] w-[2173.827px]" data-node-id="15:805" style={{ maskImage: `url("${imgImage145}")` }} data-name="image 136">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage137} />
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute flex h-[489px] items-center justify-center left-[calc(50%+425px)] top-[15180px] w-[1604px]" data-node-id="15:796">
+        <div className="-scale-y-100 flex-none rotate-180">
+          <div className="h-[489px] relative w-[1604px]" data-name="image 141">
+            <img alt="" className="absolute inset-0 max-w-none object-bottom pointer-events-none size-full" src={imgImage176} />
+          </div>
+        </div>
+      </div>
+<div className="-translate-x-1/2 absolute contents left-[calc(50%-606.5px)] top-[15168px]" data-node-id="15:797" data-name="Mask group">
+        <div className="-translate-x-1/2 absolute h-[1086px] left-[calc(50%-602px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[1.5px_700.113px] mask-size-[1436px_408.887px] top-[14467.39px] w-[1448px]" data-node-id="15:799" style={{ maskImage: `url("${imgImage135}")` }} data-name="image 135">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage142} />
+        </div>
+      </div>
+</div>);
+}

@@ -19,6 +19,22 @@ let chapterFrame;
 let opener;
 const storyEffects = createStoryEffects();
 const activeArtboard = () => artboards[mobileQuery.matches ? 1 : 0];
+const videoDialog = document.querySelector('.video-dialog');
+const dialogVideo = videoDialog.querySelector('video');
+const previewVideos = [...document.querySelectorAll('.gallery-video')];
+const visiblePreviewVideos = new Set();
+let previewSyncReady = false;
+let videoOpener;
+
+function syncPreviewPlayback() {
+  if (!previewSyncReady) return;
+  previewVideos.forEach(video => {
+    const selected = !video.closest('.gallery-slide').inert;
+    if (selected && visiblePreviewVideos.has(video) && !motionOff && !document.hidden && !videoDialog.open) {
+      video.play().catch(() => {});
+    } else video.pause();
+  });
+}
 
 function resizeArtwork() {
   const active = activeArtboard();
@@ -100,6 +116,7 @@ function animateStory() {
   motionButton.textContent = `Анимация: ${motionOff ? 'выкл.' : 'вкл.'}`;
   motionButton.setAttribute('aria-pressed', String(motionOff));
   motionButton.setAttribute('aria-label', motionOff ? 'Включить анимации' : 'Отключить анимации');
+  syncPreviewPlayback();
   ScrollTrigger.refresh();
 }
 
@@ -144,7 +161,7 @@ function openImage(element) {
   document.body.classList.add('viewer-open');
   if (!motionOff) gsap.fromTo(dialog, {y:15,opacity:0}, {y:0,opacity:1,duration:.3,ease:'power2.out'});
 }
-document.querySelectorAll('.expandable,.gallery-slide').forEach(element => { element.addEventListener('click',()=>openImage(element)); element.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openImage(element);}}); });
+document.querySelectorAll('.expandable').forEach(element => { element.addEventListener('click',()=>openImage(element)); element.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openImage(element);}}); });
 dialog.querySelector('button').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close();}});
 dialog.addEventListener('close',()=>{document.body.classList.remove('viewer-open');opener?.focus({preventScroll:true});});
@@ -166,16 +183,12 @@ function renderGallery(animated = false) {
       else gsap.set(slide,{autoAlpha:selected?1:0});
     }
     art.querySelector('.gallery-status').textContent=`Материал ${galleryIndex+1} из ${slides.length}`;
-    art.querySelectorAll('[data-gallery-index]').forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.galleryIndex) === galleryIndex)));
   }
+  syncPreviewPlayback();
 }
 document.querySelectorAll('.gallery-control').forEach(button=>button.addEventListener('click',()=>{
   const count=activeArtboard().querySelectorAll('.gallery-slide').length;
   galleryIndex=(galleryIndex+(button.dataset.direction==='next'?1:-1)+count)%count;
-  renderGallery(true);
-}));
-document.querySelectorAll('[data-gallery-index]').forEach(button => button.addEventListener('click', () => {
-  galleryIndex = Number(button.dataset.galleryIndex);
   renderGallery(true);
 }));
 renderGallery();
@@ -186,35 +199,58 @@ mediaVideos.forEach(video => video.addEventListener('play', () => {
   mediaVideos.forEach(other => { if (other !== video) other.pause(); });
 }));
 const mediaObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => { if (!entry.isIntersecting) entry.target.pause(); });
+  entries.forEach(entry => {
+    if (entry.target.classList.contains('gallery-video')) {
+      if (entry.isIntersecting) visiblePreviewVideos.add(entry.target);
+      else visiblePreviewVideos.delete(entry.target);
+    }
+    if (!entry.isIntersecting) entry.target.pause();
+  });
+  syncPreviewPlayback();
 }, { threshold: 0 });
-mediaVideos.forEach(video => mediaObserver.observe(video));
+mediaVideos.filter(video => video !== dialogVideo).forEach(video => mediaObserver.observe(video));
+previewSyncReady = true;
+document.querySelectorAll('.gallery-play').forEach(button => button.addEventListener('click', () => {
+  const source = button.closest('.gallery-slide').querySelector('video');
+  videoOpener = button;
+  previewVideos.forEach(video => video.pause());
+  dialogVideo.src = source.currentSrc || source.src;
+  videoDialog.querySelector('.dialog-caption').textContent = button.dataset.videoLabel;
+  videoDialog.showModal();
+  document.body.classList.add('viewer-open');
+  dialogVideo.play().catch(() => {});
+}));
+videoDialog.querySelector('.dialog-close').addEventListener('click', () => videoDialog.close());
+videoDialog.addEventListener('click', event => {
+  if (event.target === videoDialog) {
+    const rect = videoDialog.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) videoDialog.close();
+  }
+});
+videoDialog.addEventListener('close', () => {
+  dialogVideo.pause();
+  dialogVideo.removeAttribute('src');
+  dialogVideo.load();
+  document.body.classList.remove('viewer-open');
+  videoOpener?.focus({ preventScroll: true });
+  syncPreviewPlayback();
+});
 mobileQuery.addEventListener('change', () => {
   mediaVideos.forEach(video => video.pause());
   renderGallery();
 });
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) mediaVideos.forEach(video => video.pause());
+  else syncPreviewPlayback();
 });
 document.querySelectorAll('.campaign-results').forEach(section => {
   const rail = section.querySelector('.campaign-rail');
-  const previous = section.querySelector('[data-rail-direction="previous"]');
-  const next = section.querySelector('[data-rail-direction="next"]');
-  const updateControls = () => {
-    previous.disabled = rail.scrollLeft < 1;
-    next.disabled = rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 1;
-  };
-  const move = direction => rail.scrollBy({ left: direction * (rail.querySelector('.campaign-item').offsetWidth + parseFloat(getComputedStyle(rail).gap)), behavior: motionOff ? 'instant' : 'smooth' });
-  previous.addEventListener('click', () => move(-1));
-  next.addEventListener('click', () => move(1));
-  rail.addEventListener('scroll', updateControls, { passive: true });
+  const move = direction => rail.scrollBy({ left: direction * (rail.querySelector('.campaign-item').offsetWidth + parseFloat(getComputedStyle(rail.querySelector('.campaign-item + .campaign-item')).marginLeft)), behavior: motionOff ? 'instant' : 'smooth' });
   rail.addEventListener('keydown', event => {
     if (event.target === rail && ['ArrowLeft', 'ArrowRight'].includes(event.key)) {
       event.preventDefault(); move(event.key === 'ArrowRight' ? 1 : -1);
     }
   });
-  new ResizeObserver(updateControls).observe(rail);
-  updateControls();
 });
 
 resizeArtwork();
