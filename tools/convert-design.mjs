@@ -1,5 +1,6 @@
 import { parse } from '@babel/parser';
 import { readFile, writeFile } from 'node:fs/promises';
+import { renderCampaignResults, renderVideoGallery } from './campaign-media.mjs';
 const unknown = new Set();
 const escape = s => String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const cssRules = [];
@@ -58,6 +59,8 @@ const chapterIds={desktop:['15:443','15:416','15:594','15:731'],mobile:['15:889'
 const photoIds={desktop:['15:576','15:577','15:578','15:579','15:627','15:628','15:629','15:630','15:639','15:761','15:777'],mobile:['15:987','15:988','15:989','15:990','15:982','15:1006','15:1066','15:1082']};
 const artRoots=[];
 for(const variant of ['desktop','mobile']) {
+  const resultSpace = variant === 'desktop' ? 560 : 360;
+  const resultStart = variant === 'desktop' ? 14264 : 13985;
   const source = await readFile(`tools/reference/${variant}-current.txt`,'utf8');
   const ast=parse(source,{sourceType:'module',plugins:['jsx']});
   const bindings={};
@@ -71,7 +74,7 @@ for(const variant of ['desktop','mobile']) {
     if(n.type==='TemplateLiteral')return n.quasis.map((q,i)=>q.value.cooked+(n.expressions[i]?value(n.expressions[i]):'')).join('');
     throw new Error('Unsupported expression '+n.type);
   }
-  function render(node,root=false,parentTop=0){
+  function render(node,root=false,parentTop=0,moveContents=false,extendPaper=false){
     if(node.type==='JSXText')return /^\s*$/.test(node.value)?'':escape(node.value.replace(/\n\s*/g,' ').trim());
     if(node.type==='JSXExpressionContainer')return escape(value(node.expression));
     if(node.type!=='JSXElement')throw new Error(node.type);
@@ -84,6 +87,14 @@ for(const variant of ['desktop','mobile']) {
       else attrs[name]=attr.value?attr.value.type==='JSXExpressionContainer'?value(attr.value.expression):attr.value.value:'';
     }
     const id=attrs['data-node-id'];
+    // Omit only the repeated subtitles of chapters II and III in both artboards.
+    const omitSubtitle = ['15:417', '15:598', '15:910', '15:925'].includes(id);
+    // Make room after chapter IV's final paragraph without moving earlier chapters.
+    const top = style.top?.endsWith('px') ? parseFloat(style.top) : null;
+    const moved = style.position === 'absolute' && top !== null && (moveContents || top >= resultStart);
+    if (moved) style.top = `${top + resultSpace}px`;
+    if (['15:409', '15:829', '15:729', '15:831'].includes(id)) style.height = `${parseFloat(style.height) + resultSpace}px`;
+    if (extendPaper && style.width === '1330px') style.width = `${1330 + resultSpace}px`;
     // Figma exports mask geometry in canvas coordinates. Intersect nested masks
     // explicitly: the browser's default union exposes the rectangular source.
     if(style['mask-image'])Object.assign(style,{'mask-mode':'alpha','mask-composite':'intersect','mask-repeat':'no-repeat','mask-clip':'no-clip'});
@@ -99,7 +110,7 @@ for(const variant of ['desktop','mobile']) {
     if(strokeMap[id]){style['-webkit-text-stroke']=`${strokeMap[id][0]}px ${strokeMap[id][1]}`;style['paint-order']='stroke fill';}
     const isText=classes.includes("font-['")&&tag!=='a';
     const isChapter=chapterIds[variant].includes(id);
-    if(root){tag='article';attrs.class=`case-art case-art--${variant}`;attrs['data-width']=variant==='desktop'?1440:430;attrs['data-height']=15432;attrs['aria-label']='Кейс рекламной кампании Суварстроит';delete style.position;delete style.width;delete style.height;}
+    if(root){tag='article';attrs.class=`case-art case-art--${variant}`;attrs['data-width']=variant==='desktop'?1440:430;attrs['data-height']=15432+resultSpace;attrs.style=`--art-height:${15432+resultSpace}px`;attrs['aria-label']='Кейс рекламной кампании Суварстроит';delete style.position;delete style.width;delete style.height;}
     else {
       attrs.class=`design-layer layer-${++seq}`;
       if((isText && style.position==='absolute') || ['15:501','15:880','15:884'].includes(id))attrs.class+=' story-copy';
@@ -115,7 +126,11 @@ for(const variant of ['desktop','mobile']) {
       if(controls.includes(id)){tag='button';attrs.type='button';attrs.class+=' gallery-control';attrs['data-direction']=controls.indexOf(id)===0?'previous':'next';attrs['aria-label']=controls.indexOf(id)===0?'Предыдущий материал':'Следующий материал';}
       if(id===(variant==='desktop'?'15:750':'15:1039'))attrs.class+=' gallery-window';
       if(id===(variant==='desktop'?'15:751':'15:1041'))attrs.class+=' gallery-frame';
-      cssRules.push(`.layer-${seq}{${serialize(style)}}`);
+      if(id===(variant==='desktop'?'15:743':'15:1046')) {
+        attrs.class+=' gallery-pagination';
+        if(variant==='desktop')style.top='13505px';
+      }
+      if(!omitSubtitle)cssRules.push(`.layer-${seq}{${serialize(style)}}`);
     }
     const positionedTop=style.display==='contents'?parentTop:parentTop+(style.top?.endsWith('px')?parseFloat(style.top):0);
     if(tag==='img'){
@@ -125,9 +140,11 @@ for(const variant of ['desktop','mobile']) {
       manifests.push({variant,node:id||null,src:attrs.src,style});
     }
     if(tag==='a'){attrs.rel='noopener noreferrer';attrs['aria-label']='Открыть предложение Суварстроит';}
-    let body=isolatedBranch?'<img src="assets/chapter-four-left-branch.png" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;pointer-events:none">':node.children.map(n=>render(n,false,positionedTop)).join('');
+    let body=isolatedBranch?'<img src="assets/chapter-four-left-branch.png" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;pointer-events:none">':node.children.map(n=>render(n,false,positionedTop,style.display==='contents'&&(moved||moveContents),extendPaper||id==='15:831')).join('');
     if(isolatedBranch)manifests.push({variant,node:id,src:'assets/chapter-four-left-branch.png',style});
-    if(attrs.class?.includes('gallery-window'))body+=`<div class="gallery-media">${[['10090.png','Зилант за окном квартиры'],['7fbf1.png','Су Анасы и Шурале'],['13512.png','Шурале на билборде']].map(([file,name],index)=>`<button type="button" class="gallery-slide" data-slide="${index}" aria-label="Увеличить иллюстрацию: ${name}"><img src="assets/${file}" alt="${name}" loading="lazy" decoding="async"></button>`).join('')}</div>`;
+    if(attrs.class?.includes('gallery-window'))body+=renderVideoGallery();
+    if(attrs.class?.includes('gallery-pagination'))body=['Су Анасы','Шурале'].map((name,index)=>`<button type="button" data-gallery-index="${index}" aria-label="Показать видео: ${name}" aria-pressed="${index===0}"></button>`).join('');
+    if(root)body+=renderCampaignResults(variant);
     // The lanterns are painted into the original transparent source images.
     // Add light at their exact local image coordinates; preserve the source art.
     if(node.children.some(n=>n.type==='JSXElement'&&n.openingElement.name.name==='img')){
@@ -137,6 +154,7 @@ for(const variant of ['desktop','mobile']) {
       if(path==='assets/435aa.png')body+='<span class="lantern-glow lantern-glow--hanging" aria-hidden="true"></span>';
       if(path==='assets/1bf9f.png')body+='<span class="lantern-glow lantern-glow--books" aria-hidden="true"></span>';
     }
+    if(omitSubtitle)return '';
     return `<${tag} ${Object.entries(attrs).map(([k,v])=>`${k}="${escape(v)}"`).join(' ')}>${['img','br'].includes(tag)?'':body+`</${tag}>`}`;
   }
   const exp=ast.program.body.find(n=>n.type==='ExportDefaultDeclaration');

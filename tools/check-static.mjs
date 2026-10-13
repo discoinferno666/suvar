@@ -34,7 +34,7 @@ async function inspect(directory) {
     } else if (/\.(?:html|css)$/.test(entry.name)) {
       const source = await readFile(file, 'utf8');
       const pattern = entry.name.endsWith('.html')
-        ? /(?:src|href)\s*=\s*["']([^"']+)["']/gi
+        ? /(?:src|href|poster)\s*=\s*["']([^"']+)["']/gi
         : /url\(\s*["']?([^\s"')]+)["']?\s*\)/gi;
       for (const match of source.matchAll(pattern)) await checkReference(file, match[1]);
     } else if (['script.js', 'effects.js'].includes(entry.name)) {

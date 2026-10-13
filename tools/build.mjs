@@ -6,7 +6,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const dist = join(root, 'dist');
 const manifestFile = join(root, 'assets', 'optimized', 'manifest.json');
 const manifest = JSON.parse(await readFile(manifestFile, 'utf8'));
-for (const optimized of Object.values(manifest)) await stat(join(root, optimized));
+for (const optimized of new Set(Object.values(manifest))) await stat(join(root, decodeURIComponent(optimized)));
 
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });

@@ -160,10 +160,13 @@ function renderGallery(animated = false) {
       slide.setAttribute('aria-hidden',String(!selected));
       slide.tabIndex=selected?0:-1;
       slide.style.pointerEvents=selected?'auto':'none';
+      slide.inert = !selected || art !== activeArtboard();
+      slide.querySelectorAll('video').forEach(video => { if (!selected || art !== activeArtboard()) video.pause(); });
       if(animated&&!motionOff&&art===activeArtboard())gsap.to(slide,{autoAlpha:selected?1:0,duration:.65,ease:'sine.inOut'});
       else gsap.set(slide,{autoAlpha:selected?1:0});
     }
     art.querySelector('.gallery-status').textContent=`Материал ${galleryIndex+1} из ${slides.length}`;
+    art.querySelectorAll('[data-gallery-index]').forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.galleryIndex) === galleryIndex)));
   }
 }
 document.querySelectorAll('.gallery-control').forEach(button=>button.addEventListener('click',()=>{
@@ -171,7 +174,48 @@ document.querySelectorAll('.gallery-control').forEach(button=>button.addEventLis
   galleryIndex=(galleryIndex+(button.dataset.direction==='next'?1:-1)+count)%count;
   renderGallery(true);
 }));
+document.querySelectorAll('[data-gallery-index]').forEach(button => button.addEventListener('click', () => {
+  galleryIndex = Number(button.dataset.galleryIndex);
+  renderGallery(true);
+}));
 renderGallery();
+
+// Only one supplied video plays at a time. Pause media when it leaves the viewport.
+const mediaVideos = [...document.querySelectorAll('video')];
+mediaVideos.forEach(video => video.addEventListener('play', () => {
+  mediaVideos.forEach(other => { if (other !== video) other.pause(); });
+}));
+const mediaObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => { if (!entry.isIntersecting) entry.target.pause(); });
+}, { threshold: 0 });
+mediaVideos.forEach(video => mediaObserver.observe(video));
+mobileQuery.addEventListener('change', () => {
+  mediaVideos.forEach(video => video.pause());
+  renderGallery();
+});
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) mediaVideos.forEach(video => video.pause());
+});
+document.querySelectorAll('.campaign-results').forEach(section => {
+  const rail = section.querySelector('.campaign-rail');
+  const previous = section.querySelector('[data-rail-direction="previous"]');
+  const next = section.querySelector('[data-rail-direction="next"]');
+  const updateControls = () => {
+    previous.disabled = rail.scrollLeft < 1;
+    next.disabled = rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 1;
+  };
+  const move = direction => rail.scrollBy({ left: direction * (rail.querySelector('.campaign-item').offsetWidth + parseFloat(getComputedStyle(rail).gap)), behavior: motionOff ? 'instant' : 'smooth' });
+  previous.addEventListener('click', () => move(-1));
+  next.addEventListener('click', () => move(1));
+  rail.addEventListener('scroll', updateControls, { passive: true });
+  rail.addEventListener('keydown', event => {
+    if (event.target === rail && ['ArrowLeft', 'ArrowRight'].includes(event.key)) {
+      event.preventDefault(); move(event.key === 'ArrowRight' ? 1 : -1);
+    }
+  });
+  new ResizeObserver(updateControls).observe(rail);
+  updateControls();
+});
 
 resizeArtwork();
 document.fonts.ready.then(() => {resizeArtwork();animateStory();});
