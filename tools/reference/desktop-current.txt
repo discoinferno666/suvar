@@ -951,7 +951,7 @@ export default function Component() {
       </div>
       <div className="-translate-x-1/2 absolute h-[320px] left-[calc(50%-1px)] top-[10772px] w-[1242px]" data-node-id="15:639" data-name="image 134">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[194.06%] left-0 max-w-none top-[-45.94%] w-full" src={imgImage134} />
+          <img alt="" className="absolute h-[auto] left-[1.5%] max-w-none top-[-93px] w-[97%]" src={imgImage134} />
         </div>
       </div>
       <div className="-translate-x-1/2 absolute h-[728px] left-[calc(50%-642px)] top-[4827px] w-[830px]" data-node-id="15:640" data-name="image 106">
