@@ -21,7 +21,7 @@ const storyEffects = createStoryEffects();
 const activeArtboard = () => artboards[mobileQuery.matches ? 1 : 0];
 const videoDialog = document.querySelector('.video-dialog');
 const dialogVideo = videoDialog.querySelector('video');
-const previewVideos = [...document.querySelectorAll('.gallery-video')];
+const previewVideos = [...document.querySelectorAll('.gallery-video,.campaign-video')];
 const visiblePreviewVideos = new Set();
 let previewSyncReady = false;
 let videoOpener;
@@ -29,8 +29,8 @@ let videoOpener;
 function syncPreviewPlayback() {
   if (!previewSyncReady) return;
   previewVideos.forEach(video => {
-    const selected = !video.closest('.gallery-slide').inert;
-    if (selected && visiblePreviewVideos.has(video) && !motionOff && !document.hidden && !videoDialog.open) {
+    const selected = !video.closest('.gallery-slide')?.inert && video.closest('.case-art') === activeArtboard();
+    if (selected && visiblePreviewVideos.has(video) && !motionOff && !document.hidden && !videoDialog.open && !dialog.open) {
       video.play().catch(() => {});
     } else video.pause();
   });
@@ -158,13 +158,14 @@ function openImage(element) {
   dialog.querySelector('img').alt=caption;
   dialog.querySelector('p').textContent=caption;
   dialog.showModal();
+  syncPreviewPlayback();
   document.body.classList.add('viewer-open');
   if (!motionOff) gsap.fromTo(dialog, {y:15,opacity:0}, {y:0,opacity:1,duration:.3,ease:'power2.out'});
 }
 document.querySelectorAll('.expandable').forEach(element => { element.addEventListener('click',()=>openImage(element)); element.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openImage(element);}}); });
 dialog.querySelector('button').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close();}});
-dialog.addEventListener('close',()=>{document.body.classList.remove('viewer-open');opener?.focus({preventScroll:true});});
+dialog.addEventListener('close',()=>{document.body.classList.remove('viewer-open');opener?.focus({preventScroll:true});syncPreviewPlayback();});
 document.addEventListener('keydown', event => {if(event.key==='Escape')closeMenu();});
 
 let galleryIndex = 0;
@@ -193,14 +194,15 @@ document.querySelectorAll('.gallery-control').forEach(button=>button.addEventLis
 }));
 renderGallery();
 
-// Only one supplied video plays at a time. Pause media when it leaves the viewport.
+// Muted previews can play together. The full player takes over while open.
 const mediaVideos = [...document.querySelectorAll('video')];
-mediaVideos.forEach(video => video.addEventListener('play', () => {
-  mediaVideos.forEach(other => { if (other !== video) other.pause(); });
-}));
+dialogVideo.addEventListener('play', () => {
+  if (!videoDialog.open) return;
+  mediaVideos.forEach(other => { if (other !== dialogVideo) other.pause(); });
+});
 const mediaObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (entry.target.classList.contains('gallery-video')) {
+    if (previewVideos.includes(entry.target)) {
       if (entry.isIntersecting) visiblePreviewVideos.add(entry.target);
       else visiblePreviewVideos.delete(entry.target);
     }
@@ -245,7 +247,29 @@ document.addEventListener('visibilitychange', () => {
 });
 document.querySelectorAll('.campaign-results').forEach(section => {
   const rail = section.querySelector('.campaign-rail');
+  const scrollbar = section.querySelector('.campaign-scrollbar');
   const move = direction => rail.scrollBy({ left: direction * (rail.querySelector('.campaign-item').offsetWidth + parseFloat(getComputedStyle(rail.querySelector('.campaign-item + .campaign-item')).marginLeft)), behavior: motionOff ? 'instant' : 'smooth' });
+  const syncScrollbar = () => {
+    const travel = rail.scrollWidth - rail.clientWidth;
+    scrollbar.value = travel > 0 ? String(rail.scrollLeft / travel * 100) : '0';
+    scrollbar.disabled = travel <= 0;
+    scrollbar.style.setProperty('--scroll-thumb',`${Math.max(36,scrollbar.clientWidth * rail.clientWidth / Math.max(rail.scrollWidth,1))}px`);
+  };
+  rail.addEventListener('scroll', syncScrollbar, { passive: true });
+  new ResizeObserver(syncScrollbar).observe(rail);
+  scrollbar.addEventListener('pointerdown', () => rail.classList.add('is-scrubbing'));
+  const stopScrubbing = () => {rail.classList.remove('is-scrubbing');syncScrollbar();};
+  scrollbar.addEventListener('pointerup', stopScrubbing);
+  scrollbar.addEventListener('pointercancel', stopScrubbing);
+  scrollbar.addEventListener('blur', stopScrubbing);
+  scrollbar.addEventListener('input', () => {rail.scrollLeft=Number(scrollbar.value)/100*(rail.scrollWidth-rail.clientWidth);});
+  scrollbar.addEventListener('keydown', event => {
+    if (['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','PageUp','PageDown','Home','End'].includes(event.key)) {
+      event.preventDefault();
+      if (event.key==='Home'||event.key==='End') rail.scrollTo({left:event.key==='Home'?0:rail.scrollWidth,behavior:motionOff?'instant':'smooth'});
+      else move(['ArrowLeft','ArrowDown','PageDown'].includes(event.key)?-1:1);
+    }
+  });
   rail.addEventListener('keydown', event => {
     if (event.target === rail && ['ArrowLeft', 'ArrowRight'].includes(event.key)) {
       event.preventDefault(); move(event.key === 'ArrowRight' ? 1 : -1);

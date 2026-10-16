@@ -185,10 +185,10 @@ export default function ChapterFour() {
           </div>
         </div>
       </div>
-<div className="-translate-x-1/2 absolute flex h-[511px] items-center justify-center left-[calc(50%+489px)] top-[12478px] w-[1676px]" data-node-id="15:795">
+<div className="-translate-x-1/2 absolute flex h-[511px] items-center justify-center left-[calc(50%+726px)] top-[12583px] w-[1094px]" data-node-id="15:795">
         <div className="-scale-y-100 flex-none rotate-180">
-          <div className="h-[511px] relative w-[1676px]" data-name="image 127">
-            <img alt="" className="absolute inset-0 max-w-none object-bottom pointer-events-none size-full" src={imgImage176} />
+          <div className="h-[511px] overflow-hidden relative w-[1094px]" data-name="image 127">
+            <img alt="" className="absolute h-full left-0 max-w-none object-bottom pointer-events-none top-0 w-[1676px]" src={imgImage176} />
           </div>
         </div>
       </div>
