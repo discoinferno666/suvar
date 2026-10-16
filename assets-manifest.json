@@ -2187,13 +2187,19 @@
   {
     "variant": "desktop",
     "node": "15:806",
-    "src": "assets/chapter-four-left-branch.png",
+    "src": "assets/a8189.png",
     "style": {
       "position": "absolute",
       "left": "0",
       "top": "12522px",
       "width": "113px",
-      "height": "672px"
+      "height": "672px",
+      "overflow": "hidden",
+      "mask-image": "url(\"assets/c7bb2.svg\")",
+      "mask-position": "-384.499px -0.5px",
+      "mask-size": "497.915px 672.206px",
+      "mask-repeat": "no-repeat",
+      "mask-mode": "alpha"
     }
   },
   {

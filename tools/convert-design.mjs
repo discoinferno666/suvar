@@ -104,10 +104,10 @@ for(const variant of ['desktop','mobile']) {
     // Figma exports mask geometry in canvas coordinates. Intersect nested masks
     // explicitly: the browser's default union exposes the rectangular source.
     if(style['mask-image'])Object.assign(style,{'mask-mode':'alpha','mask-composite':'intersect','mask-repeat':'no-repeat','mask-clip':'no-clip'});
-    // The export reflects this branch's canvas-space mask twice. Use Figma's
-    // isolated transparent rendering of the visible branch at its native bounds.
+    // Keep this canvas-space mask outside the reflected image so it is not
+    // reflected twice. Use the full source so newer upscales also reach this crop.
     const isolatedBranch=id==='15:806';
-    if(isolatedBranch){Object.keys(style).forEach(k=>delete style[k]);Object.assign(style,{position:'absolute',left:'0',top:'12522px',width:'113px',height:'672px'});}
+    if(isolatedBranch){Object.keys(style).forEach(k=>delete style[k]);Object.assign(style,{position:'absolute',left:'0',top:'12522px',width:'113px',height:'672px',overflow:'hidden','mask-image':'url("assets/c7bb2.svg")','mask-position':'-384.499px -0.5px','mask-size':'497.915px 672.206px','mask-repeat':'no-repeat','mask-mode':'alpha'});}
     // Figma rounds these fractional-font list rows to a 30px line box.
     // Preserve that rhythm so the auto-layout icons keep their design positions.
     if(['15:962','15:965','15:968','15:971','15:974','15:977','15:978'].includes(id))style['line-height']='30px';
@@ -147,8 +147,8 @@ for(const variant of ['desktop','mobile']) {
       manifests.push({variant,node:id||null,src:attrs.src,style});
     }
     if(tag==='a'){attrs.rel='noopener noreferrer';attrs['aria-label']='Открыть предложение Суварстроит';}
-    let body=isolatedBranch?'<img src="assets/chapter-four-left-branch.png" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;pointer-events:none">':node.children.map(n=>render(n,false,positionedTop,style.display==='contents'&&(moved||moveContents),extendPaper||id==='15:831')).join('');
-    if(isolatedBranch)manifests.push({variant,node:id,src:'assets/chapter-four-left-branch.png',style});
+    let body=isolatedBranch?'<img src="assets/a8189.png" alt="" loading="lazy" decoding="async" style="position:absolute;left:-378.5px;top:-139.5px;width:1448px;height:1086px;max-width:none;object-fit:cover;transform:scaleX(-1);pointer-events:none">':node.children.map(n=>render(n,false,positionedTop,style.display==='contents'&&(moved||moveContents),extendPaper||id==='15:831')).join('');
+    if(isolatedBranch)manifests.push({variant,node:id,src:'assets/a8189.png',style});
     if(attrs.class?.includes('gallery-window'))body+=renderVideoGallery();
     if(id==='61:18')body=renderCampaignRail(variant);
     if(root&&variant==='mobile')body+=renderMobileCampaignResults();
